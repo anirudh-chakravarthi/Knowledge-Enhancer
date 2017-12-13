@@ -1,0 +1,66 @@
+<html>
+<head>
+	<script language="javascript">
+		var text = '{"answers":[' +
+		'{"clue":"Main Obstacle for Democracy" ,"answer":"corruption","click1" :"true"},' +
+		'{"clue":"Fight between two brothers","answer":"mahabarath","click1" :"true"},' +
+		'{"clue":"Instrument for measuring air pressure","answer":"barometer","click1" :"true" }]}';
+	</script>
+	<script src="all.js"></script>
+	<style>
+		body
+		{
+		    color: white;
+		}
+	@keyframes blink {
+    20% {
+        opacity: 0;
+    }
+   
+    99% {
+    	opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+img {
+    animation: blink 2s;
+    animation-iteration-count: infinite;
+}
+
+h5 {
+  animation-duration: 2s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+}
+
+		
+	</style>
+ <body background="url.jpeg">
+	 <center>
+		 
+		<form id='f1'>
+		<br>
+			Please select your choice of 0-2<br>
+			<input id="inp" placeholder="Enter the choice 0-2">
+			 
+			<input value="Add" onclick="add(document.forms[0].inp.value)" type="button">
+		</form>
+		<div id="d1"></br> </div></br>
+		<marquee><div id="d3"><br></div></marquee>
+		<div id='d2'> </div>
+		<button onclick="printing()">Submit</button></br>	
+		</center>
+		<br><br><br><br>
+		<div id='d7' align="right">
+				<h5>There are other questions too</h5>
+		<table align="right">
+			<tr>
+				<td>	<a href="technology.html"><img src="technology.jpg" height="40" width="100"></a></td>
+				<td>	<br><a href="politics.html"><img src="politics.jpg" height="40" width="100"></a></td>
+			</tr>
+		</table>
+		</div>
+</body>
+</html>

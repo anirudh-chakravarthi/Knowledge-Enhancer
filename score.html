@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<style>
+		body
+		{
+		    color: white;
+
+		}
+		</style>
+	</head>
+	<body bgcolor="black">
+		<div id='d1'>Hello </div>
+		<div id='d2'>Your Score is  </div>
+		<script type="text/javascript">
+			var d1=document.getElementById('d1');
+			var d2=document.getElementById('d2');
+			var name=localStorage.getItem("name");
+			var sco=parseInt(localStorage.getItem("score")); 
+			d1.innerHTML+=name;
+			d2.innerHTML+=sco;
+			setTimeout("location.reload(true);",10000);
+		</script>	
+	</body>
+</html>

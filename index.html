@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>
+			Welcome  
+		</title>
+		<script type="text/javascript">
+			function fun ()
+			{
+				var name=document.getElementById('name').value;
+				localStorage.setItem("name",name);
+				localStorage.setItem("score",'0');
+			}
+			</script>
+			
+	</head>
+	<body bgcolor="green"><br>
+		<h1 align="center">Welcome to the WordGuessing game </h1><br><hr>
+		<form  onsubmit="return checkForm(this);" >
+		<p>
+				<h3>About This Game</h3>
+				<pre>
+				First you need to enter a number of your choice and then
+				you will be given a clue with which you need to find of 
+				the word from the given clue.
+
+				and there you will be provided with buttons where you 
+				can check the particular letter.
+				</pre>  
+				<h3>Rules Of The Game</h3>
+				<li>
+					You can only answer one question only once.
+				</li>
+				<li>
+					You can only submit one question atmost only once
+				</li><br>
+				<center>
+				<u>Note</u> :- If you press the button for letter your score may be decreased as follows <br>
+				<li>
+					None, Score =+10.
+				</li>
+				<li>
+					Once, Score =+5.
+				</li>
+				<li>
+					twice, score =+3.
+				</li>
+				<li>
+					Thrice or more, score =+1
+				</li>
+
+			</p>
+			<br><br>
+			Name:-<input id='name' required placeholder="Please input your name to proceed"><br>	
+			<input type="checkbox" required="required"> accept all the terms and conditions</input>
+			<br><input type="submit" value="submit" formaction="frame.html" onclick="fun()"></input>	
+
+		</form>
+</body>
+</html>

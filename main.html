@@ -1,0 +1,36 @@
+
+<html>
+	<head>
+		<title>
+			welcome to game
+		</title>
+
+	</head>
+	
+	<body bgcolor="green">
+		<center>
+			</br></br></br>
+			<marquee><div id ='d1'></div></marquee>
+			</br></br></br></br>
+			<table>
+				<tr>
+					<td>
+						<a href="dictionary.html"><img src="dictionary.jpg" height="200" width="300"></a>
+					</td>
+					<td>
+						<a href="technology.html"><img src="technology.jpg" height="200" width="300"></a>
+					</td>
+				</tr>
+			</table>
+					
+						<a href="politics.html"><img src="politics.jpg" height="200" width="300"></a>
+					
+
+		</center>
+		<script type="text/javascript">
+			var name=localStorage.getItem('name');
+			var d1=document.getElementById('d1');
+			d1.innerHTML="Welcome "+name+" Please select a topic";
+		</script>
+	</body>
+</html>
